@@ -1,0 +1,12 @@
+{
+  "name": "a11y-toolkit",
+  "version": "0.0.1",
+  "description": "A general-purpose tool for announcing messages to screen readers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-example": "watchify example/index.js -o example/dist/index.js"
+  },
+  "author": "Jason Blanchard",
+  "license": "ISC"
+}
