@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-example": "watchify example/index.js -o example/dist/index.js"
+    "build-example": "./node_modules/watchify/bin/cmd.js example/index.js -o example/dist/index.js",
+    "start-example": "npm run build-example & ./node_modules/http-server/bin/http-server example/ -p 8082"
   },
   "author": "Jason Blanchard",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.8.0",
+    "node-dev-server": "0.0.1"
+  }
 }
