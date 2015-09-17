@@ -2,7 +2,7 @@
 Toolkit with JavaScript utilties for making accessible Web apps.
 
 Inspired by:
-* [a11y_kit](https://github.com/patrickfox/a11y_kit] & (https://vimeo.com/117614181)[https://vimeo.com/117614181)
+* [a11y_kit](https://github.com/patrickfox/a11y_kit) (And [this great video presentation](https://vimeo.com/117614181))
 * [a11y_announcer](a11y-announcer)
 * [ngA11y](https://github.com/dequelabs/ngA11y)
 
