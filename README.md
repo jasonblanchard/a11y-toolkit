@@ -27,3 +27,21 @@ a11yToolkit.announce('About page loaded', 'polite');
 ###Params
 * `@message: string` - message to be announced
 * `@manner: ['polite'(default), 'assertive']` - ARIA manner is which message is announced
+
+This function requires a `<div>` element that stays on the page. It should not be created dynamically - it should be on the page on page load:
+
+```html
+<div id="a11y_announcer" aria-live="polite"></div>
+```
+
+To hide this in the UI but ensure that it will be read by screen readers, add a `visually-hidden` class and this CSS:
+```css
+.visually-hidden {
+  position: 'absolute',
+  left: '-10000px',
+  top: 'auto',
+  width: '1px',
+  height: '1px',
+  overflow: 'hidden'
+}
+```
