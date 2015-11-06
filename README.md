@@ -31,7 +31,7 @@ a11yToolkit.announce('About page loaded', 'polite');
 This function requires a `<div>` element that stays on the page. It should not be created dynamically - it should be on the page on page load:
 
 ```html
-<div id="a11y_announcer" aria-live="polite"></div>
+<div id="a11y-toolkit-announcer" aria-live="polite"></div>
 ```
 
 To hide this in the UI but ensure that it will be read by screen readers, add a `visually-hidden` class and this CSS:
